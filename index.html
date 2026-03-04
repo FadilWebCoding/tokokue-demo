@@ -1,161 +1,105 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Demo Website Toko Kue</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background: #fff8f0;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #ff6f61, #ff8c42);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        header p {
-            margin: 5px 0 0 0;
-            font-size: 14px;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-
-        .card-content {
-            padding: 15px;
-        }
-
-        .card-content h3 {
-            margin: 10px 0 5px 0;
-        }
-
-        .price {
-            color: #ff6f61;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-        }
-
-        footer {
-            background: #ff6f61;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>FUNN Ice Cream Demo Profesional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; background:#fffaf0; color:#333; }
+header { background: linear-gradient(135deg, #ff7f50, #ff4500); color:white; padding:40px 20px; text-align:center; }
+header h1 { margin:0; font-size:28px; }
+header p { margin:5px 0 0 0; font-size:14px; }
+.container { padding:20px; max-width:1200px; margin:auto; }
+.gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; margin-bottom:30px; }
+.card { border-radius:15px; overflow:hidden; text-align:center; transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.2); }
+.card img { width:100%; height:200px; object-fit:cover; }
+.card-content { padding:15px; color:white; }
+.card1 { background:#ff6f61; }
+.card2 { background:#ffb347; }
+.card3 { background:#6a5acd; }
+.card4 { background:#ff69b4; }
+.card5 { background:#20b2aa; }
+.card6 { background:#ffa500; }
+.card-content h3 { margin:10px 0 5px 0; }
+.price { font-weight:bold; margin-bottom:10px; }
+.btn { display:inline-block; background:#25D366; color:white; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:bold; margin-bottom:10px; }
+.btn:hover { opacity:0.9; }
+footer { background:#ff4500; color:white; text-align:center; padding:20px; font-size:14px; }
+</style>
 </head>
 <body>
 
 <header>
-    <h1>Demo Website Toko Kue</h1>
-    <p>Contoh Website Katalog & Pemesanan Online – DEMO</p>
+<h1>FUNN Ice Cream Profesional</h1>
+<p>Katalog & Pemesanan Online</p>
 </header>
 
 <div class="container">
+<h2 style="text-align:center; margin-bottom:20px;">Koleksi Es Krim & Minuman</h2>
+<div class="gallery">
 
-    <h2 style="text-align:center; margin-bottom:20px;">Koleksi Kue</h2>
+<div class="card card1">
+<img src="https://picsum.photos/400/300?random=101" alt="Vanilla Delight">
+<div class="card-content">
+<h3>Vanilla Delight</h3>
+<p class="price">Mulai dari Rp25.000</p>
+<a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
+</div>
+</div>
 
-    <div class="gallery">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62" alt="Coklat Premium">
-            <div class="card-content">
-                <h3>Coklat Premium</h3>
-                <p class="price">Mulai dari Rp150.000</p>
-                <a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
-            </div>
-        </div>
+<div class="card card2">
+<img src="https://picsum.photos/400/300?random=102" alt="Chocolate Frappe">
+<div class="card-content">
+<h3>Chocolate Frappe</h3>
+<p class="price">Mulai dari Rp30.000</p>
+<a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
+</div>
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f" alt="Red Velvet">
-            <div class="card-content">
-                <h3>Red Velvet</h3>
-                <p class="price">Mulai dari Rp170.000</p>
-                <a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
-            </div>
-        </div>
+<div class="card card3">
+<img src="https://picsum.photos/400/300?random=103" alt="Strawberry Smoothie">
+<div class="card-content">
+<h3>Strawberry Smoothie</h3>
+<p class="price">Mulai dari Rp30.000</p>
+<a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
+</div>
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e" alt="Custom Cake">
-            <div class="card-content">
-                <h3>Custom Birthday Cake</h3>
-                <p class="price">Mulai dari Rp200.000</p>
-                <a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
+<div class="card card4">
+<img src="https://picsum.photos/400/300?random=104" alt="Mango Shake">
+<div class="card-content">
+<h3>Mango Shake</h3>
+<p class="price">Mulai dari Rp35.000</p>
+<a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
+</div>
+</div>
 
-    <h2 style="text-align:center; margin-bottom:15px;">Lokasi Toko Demo</h2>
-    <div style="text-align:center; margin-bottom:30px;">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.1234567890!2d123.631234567!3d-8.85987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfb1234567890%3A0xabcdef1234567890!2sEnde%2C%20NTT!5e0!3m2!1sid!2sid!4v1234567890" 
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-        ></iframe>
-    </div>
+<div class="card card5">
+<img src="https://picsum.photos/400/300?random=105" alt="Cappuccino Delight">
+<div class="card-content">
+<h3>Cappuccino Delight</h3>
+<p class="price">Mulai dari Rp27.000</p>
+<a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
+</div>
+</div>
 
+<div class="card card6">
+<img src="https://picsum.photos/400/300?random=106" alt="Berry Blast">
+<div class="card-content">
+<h3>Berry Blast</h3>
+<p class="price">Mulai dari Rp33.000</p>
+<a class="btn" href="https://wa.me/081234567890">Pesan Sekarang</a>
+</div>
+</div>
+
+</div>
 </div>
 
 <footer>
-    Lokasi: Ende, NTT | Buka setiap hari 08.00 - 21.00<br>
-    <small>Ini hanya demo website, bukan website resmi.</small>
+Lokasi: Jalan Ahmad Yani, Ende, NTT | Buka setiap hari 08.00 - 21.00
 </footer>
 
 </body>
 </html>
+                                                                   </html>
