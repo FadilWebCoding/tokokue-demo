@@ -3,55 +3,132 @@
 <head>
     <title>Demo Website Toko Kue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #fff8f0;
-            text-align: center;
+            padding: 0;
+            background: #fff5f7;
         }
+
         header {
-            background: #ff8c42;
+            background: linear-gradient(135deg, #ff4d6d, #ff758f);
             color: white;
-            padding: 20px;
+            text-align: center;
+            padding: 30px 15px;
         }
-        section {
-            padding: 20px;
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
         }
-        .btn {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #ff8c42;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 10px;
+
+        header p {
+            margin-top: 8px;
             font-size: 14px;
         }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #ff4d6d;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background: #ff4d6d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Demo Website Toko Kue</h1>
-    <p>Contoh Tampilan Website Modern</p>
+    <p>Contoh Website Katalog & Pemesanan Online</p>
 </header>
 
-<section>
-    <h2>Kue Fresh Setiap Hari</h2>
-    <p>Kami menyediakan berbagai macam kue ulang tahun, roti, dan snack box.</p>
-    <a class="btn" href="#">Pesan Sekarang</a>
-</section>
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62" alt="Coklat Premium">
+        <div class="card-content">
+            <h3>Coklat Premium</h3>
+            <p class="price">Mulai dari Rp150.000</p>
+            <a class="btn" href="https://wa.me/085253489959">Pesan Sekarang</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f" alt="Red Velvet">
+        <div class="card-content">
+            <h3>Red Velvet</h3>
+            <p class="price">Mulai dari Rp170.000</p>
+            <a class="btn" href="https://wa.me/085253489959">Pesan Sekarang</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e" alt="Custom Cake">
+        <div class="card-content">
+            <h3>Custom Birthday Cake</h3>
+            <p class="price">Mulai dari Rp200.000</p>
+            <a class="btn" href="https://wa.me/085253489959">Pesan Sekarang</a>
+        </div>
+    </div>
+
+</div>
 
 <footer>
-    <p>Ini hanya demo website, bukan website resmi.</p>
+    Lokasi: Ende, NTT <br>
+    Buka setiap hari | 08.00 - 21.00
 </footer>
 
 </body>
-  </html>
+</html>
 
